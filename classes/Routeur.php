@@ -10,9 +10,7 @@ class Routeur{
      public $routes = [
                        "home"=>["Controllers"=>"Home","method"=>"showHome"],//class Home
                        "contact"=>["Controllers"=>"Home","method"=>"showContact"],
-                       "ajouter"=>["Controllers"=>"Home","method"=>"ajouter"]
-
-                       
+                       "ajouter"=>["Controllers"=>"Home","method"=>"ajouter"],                      
                       ];
 
      public function __construct($requette)
@@ -28,7 +26,10 @@ class Routeur{
            $controlleur_courant->$method();
 
        
-       }else{
+       }
+       /*else if($this->requette ='temp'){
+          require_once(CONTROLLER.'temp.php');
+       }*/else{
            require_once(VIEW.'header.php');
            echo '<h4 class="text-danger" style="margin-left: 700px; margin-top: 50px;">404</h4>';
        }

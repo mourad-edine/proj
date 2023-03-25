@@ -10,8 +10,8 @@
 <body>
   <header class="bg-secondary" style="padding: 30px;">
     <nav>
-      <a href="../index.php" class="text-underline text-white mx-2">Home</a>
-      <a href="Controllers/ajouter.php" class="text-underline text-white mx-2">ajouter devinette</a>
-      <a href="../index.php" class="text-underline text-white">exit</a>
+      <a href="home" class="text-underline text-white mx-2">Home</a>
+      <a href="ajouter" class="text-underline text-white mx-2">ajouter devinette</a>
+      <a href="home" class="text-underline text-white">exit</a>
     </nav>
   </header>

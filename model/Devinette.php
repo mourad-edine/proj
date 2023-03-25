@@ -21,6 +21,6 @@ class Devinette{
     }
 
     public function setReponse($valiny){
-        $this->reponse =  $valiny; 
+        $this->reponse = $valiny; 
     }
 }

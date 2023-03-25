@@ -7,9 +7,9 @@ if(isset($_GET['id'])){
         $statement->execute();
 
         if($statement){
-            header('location: ../index.php?texte=reussi');
+            header('location: ../home');
         }else{
-            header('location: ../index.php?texte=echec');
+            header('location: ../home');
         }
     }
 ?>

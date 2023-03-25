@@ -10,17 +10,17 @@ if(isset($_POST['bouton'])){
         $statement->execute();
 
         if($statement){
-            header('location: ajouter.php?texte=reussi');
+            header('location: ajouter?texte=reussi');
         }else{
-            header('location: ajouter.php?texte=echec');
+            header('location: ajouter?texte=echec');
         }
     }else{
-        header('location: ajouter.php?texte=toutremplir');
+        header('location: ajouter?texte=toutremplir');
     }
     
     
 
 }else{
-    header('location: ajouter.php?texte=pasdevaleurparlebouton');
+    header('location: ajouter?texte=pasdevaleurparlebouton');
 }
 
