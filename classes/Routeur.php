@@ -10,7 +10,8 @@ class Routeur{
      public $routes = [
                        "home"=>["Controllers"=>"Home","method"=>"showHome"],//class Home
                        "contact"=>["Controllers"=>"Home","method"=>"showContact"],
-                       "ajouter"=>["Controllers"=>"Home","method"=>"ajouter"],                      
+                       "ajouter"=>["Controllers"=>"Home","method"=>"ajouter"], 
+                       "temp"=>["Controllers"=>"Home","method"=>"modifier"],                      
                       ];
 
      public function __construct($requette)

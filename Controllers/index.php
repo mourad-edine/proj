@@ -47,5 +47,34 @@ class Home{
     require_once(VIEW.'ajoute.php');
     require_once(VIEW.'footer.php');
   }
+
+  public function modifier(){
+    if(isset($_POST['bouton'])){
+
+      $devinette = $_POST['devinette'];
+      $reponse = $_POST['reponse'];
+      if($devinette!="" && $reponse!=""){
+          require_once("database.php");
+          $requette = "INSERT INTO articles(devinette,reponse) VALUES('$devinette','$reponse')";
+          $statement = $con->prepare($requette);
+          $statement->execute();
+  
+          if($statement){
+              header('location: ajouter?texte=reussi');
+          }else{
+              header('location: ajouter?texte=echec');
+          }
+      }else{
+          header('location: ajouter?texte=toutremplir');
+      }
+      
+      
+  
+  }else{
+      header('location: ajouter?texte=pasdevaleurparlebouton');
+  }
+  
+  
+  }
 }
 ?>
