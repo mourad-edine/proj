@@ -11,7 +11,8 @@ class Routeur{
                        "home"=>["Controllers"=>"Home","method"=>"showHome"],//class Home
                        "contact"=>["Controllers"=>"Home","method"=>"showContact"],
                        "ajouter"=>["Controllers"=>"Home","method"=>"ajouter"], 
-                       "temp"=>["Controllers"=>"Home","method"=>"modifier"],                      
+                       "temp"=>["Controllers"=>"Home","method"=>"modifier"], 
+                       "delete"=>["Controllers"=>"Home","method"=>"supprimer"],                      
                       ];
 
      public function __construct($requette)

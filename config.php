@@ -12,5 +12,6 @@
         define('VIEW',ROOT.'/view/');
         define('MODEL',ROOT."/model/");
         define('CLASSES',ROOT."/classes/");
+        define('OBJET',MODEL.'/class/');
 
 ?>
