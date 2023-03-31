@@ -5,4 +5,8 @@ $routeur = new Routeur($requette);
 $routeur->renderController();
 
 
+content: [
+"./index.html",
+"./src/**/*.{js,ts,jsx,tsx}"
+
 ?>
